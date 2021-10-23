@@ -1,0 +1,176 @@
+:root {
+  --theme-color: #fff;
+  --secondary-color: #F2F4F7;
+  --head-color: black;
+  --text-color: #444444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--secondary-color);
+  justify-content: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+.nav-bar img {
+  position: absolute;
+  left: 25px;
+  width: 80px;
+  padding: 10px;
+}
+
+.navbar i {
+  display: none;
+}
+
+/* Home page */
+.homepage {
+  width: 100%;
+  height: 100vh;
+}
+
+/* About */
+
+
+/* Domain */
+.domains {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.domains .row>div {
+  margin: 10px 0;
+}
+
+.card-clr {
+  --bg-color: #ffd861;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: #fff;
+  border: none;
+  border-radius: 0 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card i, .card .iconify {
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+  transform: translateZ(0);
+  z-index: 999;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  transition: opacity 0.5s ease-out;
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card h4 {
+  font-size: 20px;
+  color: #4C5656;
+  margin-top: 200px;
+  z-index: 1000;
+  transition: color 0.5s ease-out;
+}
+
+.card p {
+  font-size: 17px;
+  text-align: justify;
+  color: #4C5656;
+  z-index: 1000;
+  padding: 10px 30px;
+  transition: color 0.5s ease-out;
+}
+
+.card:hover p,
+.card:hover h4 {
+  color: var(--text-color-hover);
+}
+
+.overlay {
+  width: 115px;
+  height: 115px;
+  top: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background: var(--bg-color);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .overlay {
+  transform: scale(8);
+}
+
+.lead {
+  width: 100%;
+  height: auto;
+}
