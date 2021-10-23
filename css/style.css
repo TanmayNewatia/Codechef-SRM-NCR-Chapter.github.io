@@ -55,7 +55,7 @@ html {
   height: auto;
 }
 
-.domains .row>div {
+.col-md-4 {
   margin: 10px 0;
 }
 
@@ -63,12 +63,12 @@ html {
   --bg-color: #ffd861;
   --bg-color-light: #ffeeba;
   --text-color-hover: #4C5656;
-  --box-shadow-color: rgba(255, 215, 97, 0.48);
+  --box-shadow-color: rgba(0, 0, 0, 0.17);
 }
 
 .card {
   width: 100%;
-  height: auto;
+  height: 450px;
   position: relative;
   background: #fff;
   border: none;
@@ -170,7 +170,103 @@ html {
   transform: scale(8);
 }
 
+/* leads */
+
 .lead {
   width: 100%;
   height: auto;
+}
+
+.card img {
+  height: 100%;
+  width: auto;
+}
+
+.card-blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+
+.card:hover .card-blur {
+  opacity: 0.3;
+}
+
+.txt-box {
+  z-index: 1;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+}
+
+svg#curve {
+  position: absolute;
+  fill: #fff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.connections {
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  margin: auto 20px;
+}
+
+.connection {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  margin-right: 20px;
+  transform: translateY(200px);
+  transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
+  z-index: 100;
+}
+
+.card:hover .connection {
+  transform: translateY(0px);
+}
+
+.card:hover .info {
+  transform: translateY(0px);
+}
+
+.connection:first-child {
+  transition-delay: -0.06s;
+}
+
+.connection:last-child {
+  transition-delay: 0.12s;
+}
+
+.connection .iconify {
+  display: block;
+  height: 20px;
+  width: 20px;
+  color: #000;
+}
+
+.info {
+  padding-left: 20px;
+  transform: translateY(250px);
+  transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.info h4, .info p {
+  margin: 0;
+  padding: 0;
 }

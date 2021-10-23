@@ -181,133 +181,240 @@
         <h2>Our Leads</h2>
       </div>
       <div class="row">
-        <div class="col-md-4 mx-auto">
-          <div class="card card-lead">
-            <div class="card-img">
-              <a href="lead-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">President</h6>
-                </div>
+        <!-- lead 1 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-4.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
               </div>
-              <h3 class="card-title"><a href="lead-single.html">Intro</a></h3>
-              <p class="card-descriptionjustify                           Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                    a pellentesque nec,
-                                    egestas non nisi.
-                                </p>
-                            </div>
-                            <div class=" card-footer">
-                <div class="post-date">
-                  <a href="https://example.com"><span class="bi bi-linkedin"></span></a>
-                  <a href="https://example.com"><span class="bi bi-github"></span></a>
-                </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
             </div>
+            <div class="card-blur"></div>
           </div>
         </div>
-        <div class="col-md-4 mx-auto">
-          <div class="card card-lead">
-            <div class="card-img">
-              <a href="lead-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">President</h6>
-                </div>
+
+        <!-- lead 2 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-2.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
               </div>
-              <h3 class="card-title"><a href="lead-single.html">Intro</a></h3>
-              <p class="card-descriptionjustify                           Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                    a pellentesque nec,
-                                    egestas non nisi.
-                                </p>
-                            </div>
-                            <div class=" card-footer">
-                <div class="post-date">
-                  <a href="https://example.com"><span class="bi bi-linkedin"></span></a>
-                  <a href="https://example.com"><span class="bi bi-github"></span></a>
-                </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect2" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
             </div>
+            <div class="card-blur"></div>
           </div>
         </div>
-        <div class="col-md-4 mx-auto">
-          <div class="card card-lead">
-            <div class="card-img">
-              <a href="lead-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">President</h6>
-                </div>
+
+        <!-- lead 3 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-4.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
               </div>
-              <h3 class="card-title"><a href="lead-single.html">Intro</a></h3>
-              <p class="card-descriptionjustify                           Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                    a pellentesque nec,
-                                    egestas non nisi.
-                                </p>
-                            </div>
-                            <div class=" card-footer">
-                <div class="post-date">
-                  <a href="https://example.com"><span class="bi bi-linkedin"></span></a>
-                  <a href="https://example.com"><span class="bi bi-github"></span></a>
-                </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
             </div>
+            <div class="card-blur"></div>
           </div>
         </div>
-        <div class="col-md-4 mx-auto">
-          <div class="card card-lead">
-            <div class="card-img">
-              <a href="lead-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">President</h6>
-                </div>
+
+        <!-- lead 4 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-2.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
               </div>
-              <h3 class="card-title"><a href="lead-single.html">Intro</a></h3>
-              <p class="card-descriptionjustify                           Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                    a pellentesque nec,
-                                    egestas non nisi.
-                                </p>
-                            </div>
-                            <div class=" card-footer">
-                <div class="post-date">
-                  <a href="https://example.com"><span class="bi bi-linkedin"></span></a>
-                  <a href="https://example.com"><span class="bi bi-github"></span></a>
-                </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
             </div>
+            <div class="card-blur"></div>
           </div>
         </div>
-        <div class="col-md-4 mx-auto">
-          <div class="card card-lead">
-            <div class="card-img">
-              <a href="lead-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">President</h6>
-                </div>
+
+        <!-- lead 5 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-4.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
               </div>
-              <h3 class="card-title"><a href="lead-single.html">Intro</a></h3>
-              <p class="card-descriptionjustify                           Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                    a pellentesque nec,
-                                    egestas non nisi.
-                                </p>
-                            </div>
-                            <div class=" card-footer">
-                <div class="post-date">
-                  <a href="https://example.com"><span class="bi bi-linkedin"></span></a>
-                  <a href="https://example.com"><span class="bi bi-github"></span></a>
-                </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
             </div>
+            <div class="card-blur"></div>
+          </div>
+        </div>
+
+        <!-- lead 6 -->
+        <div class="col-md-4">
+          <div class="card card-clr">
+            <img src="img/testimonial-2.jpg" alt="">
+            <div class="txt-box">
+              <div class="connections">
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:linkedin"></span>
+                </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="entypo-social:github"></span> </a>
+                <a href="" class="connection">
+                  <span class="iconify" data-icon="simple-icons:gmail"></span>
+                </a>
+              </div>
+              <svg id="curve">
+                <path id="p" d="M0,200 Q80,100 100%,200 V150 H0 V50" transform="translate(0 300)" />
+                <rect id="dummyRect" x="0" y="0" height="450" width="100%" fill="transparent" />
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+              <div class="info">
+                <h4>Name</h4>
+                <p>President</p>
+              </div>
+            </div>
+            <div class="card-blur"></div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
