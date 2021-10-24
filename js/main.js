@@ -17,6 +17,12 @@ if (typed) {
 
 AOS.init({
   offset: 100,
-  duration: 1200,
+  duration: 600,
   once: false,
 });
+
+// tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
