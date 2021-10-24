@@ -26,3 +26,7 @@ AOS.init({
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+ScrollOut({
+  targets: '.card2 .txt-box, .card2 .info, .card2 .connection:first-child, .card2 .connection:last-child, .card2 .connection:nth-child(2)'
+});
