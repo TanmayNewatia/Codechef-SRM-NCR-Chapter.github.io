@@ -1,4 +1,5 @@
 // typed.js
+"use strict";
 
 const typed = document.querySelector('.typed')
 if (typed) {
@@ -29,4 +30,28 @@ $(function () {
 
 ScrollOut({
   targets: '.card2 .txt-box, .card2 .info, .card2 .connection:first-child, .card2 .connection:last-child, .card2 .connection:nth-child(2)'
+});
+
+// menu-btn
+
+$(document).ready(function () {
+  $(".menu-icon").on("click", function () {
+    setTimeout(function () {
+      $("nav ul").toggleClass("flex-column d-block");
+      $(".navbar").toggleClass("d-block");
+    }, 50);
+  });
+});
+
+$(document).ready(function () {
+  $(".nav-link").on("click", function () {
+    $("nav ul").removeClass("flex-column d-block");
+    $(".navbar").removeClass("d-block");
+  });
+});
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+
+particlesJS.load('particles-js', 'js/particlesjs-config.json', function () {
+  console.log('callback - particles.js config loaded');
 });

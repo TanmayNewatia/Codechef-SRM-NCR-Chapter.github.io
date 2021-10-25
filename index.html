@@ -10,46 +10,48 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <!-- navbar -->
   <header id="header" class="fixed-top">
-    <div class="nav-bar d-inline-flex align-items-center">
+    <div class="nav-bar d-inline-flex align-items-center flex-column flex-md-row">
       <img class="img-fluid" src="img/logo3.png" alt="Logo">
-      <nav id="navbar" class="navbar">
-        <ul class="list-unstyled d-inline-flex align-content-center m-1">
-          <li><a class="nav-link scrollto active" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="#About">About</a></li>
-          <li><a class="nav-link scrollto" href="#domains">Domains</a></li>
-          <li><a class="nav-link scrollto" href="#lead">Leads</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      <nav id="navbar" class="navbar d-none d-md-block ">
+        <ul class="list-unstyled align-content-center m-1 text-center flex-md-row d-none d-md-inline-flex">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#domains">Domains</a></li>
+          <li><a class="nav-link" href="#lead">Leads</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <span class="iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
-        <span class="iconify-inline" data-icon="maki:cross"></span>
       </nav>
+      <!-- <span class="iconify-inline" data-icon="maki:cross"></span> -->
+      <span class="menu-icon d-block d-md-none iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
     </div>
   </header>
 
   <!-- homepage -->
+
   <section class="homepage d-flex flex-column text-center justify-content-center text-center" id="Homepage">
+    <div id="particles-js"></div>
     <h1 class="hero-title mb-4">CodeChef SRM NCR Chapter</h1>
     <p class="hero-subtitle element"><span class="typed" data-typed-items="Designers, Developers, Leaders"></span></p>
   </section>
 
   <!-- About me Section -->
-  <section class="about container" id="About">
-    <div class="title text-center" data-aos="fade-up" data-aos-duration="1300">
+  <section class="about container-lg" id="About">
+    <div class="title text-center overflow-hidden" data-aos="fade-up" data-aos-duration="1300">
       <h2>About Us</h2>
     </div>
     <div class="d-flex flex-column flex-md-row align-items-center">
-      <div class="about-img text-center">
-        <img class="img-fluid" src="img/logo.png" />
+      <div class="about-img text-center overflow-hidden">
+        <img class="img-fluid" data-aos="fade-up-right" data-aos-duration="1000" src="img/logo.png" />
       </div>
-      <div class="about-txt w-75 text-justify">
-        <p class="p-lg-4">
+      <div class="about-txt w-75 text-justify overflow-hidden">
+        <p class="p-lg-4" data-aos="fade-up-left" data-aos-duration="1000" id="">
           CodeChef was started in 2009 as an educational initiative for the programming community by Directi, an Indian software products company. Today, CodeChef is one of the world’s largest and popular global competitive programming platforms preferred by student & professional programmers. In
           2020, CodeChef was added under the aegis of the Unacademy brand.
           <br> <br>
@@ -64,7 +66,7 @@
 
   <!-- Domains -->
   <section id="domains" class="domains">
-    <div class="container">
+    <div class="container-lg">
       <div class="title text-center" data-aos="fade-up" data-aos-duration="1300">
         <h2>Domains</h2>
         <p> Things we are interested in.</p>
@@ -356,6 +358,7 @@
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
