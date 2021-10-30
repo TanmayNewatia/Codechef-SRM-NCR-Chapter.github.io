@@ -136,6 +136,33 @@ body {
   padding: 20px;
 }
 
+.stat {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 10px;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #c8c8c81a;
+}
+
+.stat span {
+  font: 900 30px Inconsolata;
+}
+
+.stat h3 {
+  font: 900 22px Inconsolata;
+  letter-spacing: 0.5mm;
+  margin: 10px;
+}
+
+.stat .iconify {
+  font-size: 50px;
+  margin: 10px;
+}
 
 /* Domain */
 .domains {
@@ -148,6 +175,7 @@ body {
   margin: 10px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
