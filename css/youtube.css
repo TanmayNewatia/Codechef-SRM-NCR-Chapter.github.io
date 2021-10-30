@@ -14,7 +14,7 @@
     position: relative;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    background: url("../img/logo.png") no-repeat center, radial-gradient(circle, #505050, #101010);;
+    background: url("https://img.youtube.com/vi/3wsUxk2SArU/maxresdefault.jpg") no-repeat center/cover, radial-gradient(circle, #505050, #101010);
     overflow: hidden;
 }
 
@@ -93,4 +93,11 @@
     height: 2vh;
     transform: translate(-50%, -50%) scale(88.8888888889);
     transition: transform 0.5s ease-out;
+}
+
+@media (hover: none) {
+    .yt-card:after,
+    .yt-card .card-play {
+        opacity: 1;
+    }
 }
