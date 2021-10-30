@@ -527,6 +527,9 @@ body {
   background: var(--secondary-color);
 }
 
+.footer a {
+  color: var(--text-color);
+}
 
 /* responsive */
 @media screen and (max-width: 768px) {
