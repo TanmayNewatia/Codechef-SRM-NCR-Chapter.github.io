@@ -532,7 +532,7 @@ body {
 }
 
 .footer a {
-  color: var(--text-color);
+  color: var(--bg-color);
 }
 
 /* responsive */
