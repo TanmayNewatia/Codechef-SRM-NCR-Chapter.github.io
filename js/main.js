@@ -5,12 +5,12 @@ let theme = localStorage.getItem('data-theme');
 
 const changeThemeToDark = () => {
   document.body.classList = 'dark'
-  document.body.style.backgroundImage = "url(../../img/dark.png)";
+  document.body.style.backgroundImage = "url(img/dark.png)";
   localStorage.setItem("data-theme", "dark")
 }
 const changeThemeToLight = () => {
   document.body.classList = ''
-  document.body.style.backgroundImage = "url(../../img/light.png)";
+  document.body.style.backgroundImage = "url(img/light.png)";
   localStorage.setItem("data-theme", 'light')
 }
 
