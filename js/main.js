@@ -1,5 +1,29 @@
+// dark Mode
+
+let themeBtn = document.getElementById("themebtn")
+let theme = localStorage.getItem('data-theme');
+
+const changeThemeToDark = () => {
+  document.body.classList = 'dark'
+  document.body.style.backgroundImage = "url(../img/dark.png)";
+  localStorage.setItem("data-theme", "dark")
+}
+const changeThemeToLight = () => {
+  document.body.classList = ''
+  document.body.style.backgroundImage = "url(../img/light.png)";
+  localStorage.setItem("data-theme", 'light')
+}
+
+themeBtn.addEventListener('change', () => {
+    let theme = localStorage.getItem('data-theme');
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }   
+});
+
 // typed.js
-"use strict";
 
 const typed = document.querySelector('.typed')
 if (typed) {
@@ -119,18 +143,18 @@ $('.counter').countUp();
 
 // Variables
 var player,
-		card  = document.querySelector( '.yt-card' ),
-		play  = document.querySelector( '.card-play' ),
-		video = document.querySelector( '.card-video' );
+  card = document.querySelector('.yt-card'),
+  play = document.querySelector('.card-play'),
+  video = document.querySelector('.card-video');
 
 
 // Shine effect
 card.onmousemove = function (e) {
-	const x = e.pageX - card.offsetLeft;
-	const y = e.pageY - card.offsetTop;
+  const x = e.pageX - card.offsetLeft;
+  const y = e.pageY - card.offsetTop;
 
-	card.style.setProperty( '--x', x + 'px' );
-	card.style.setProperty( '--y', y + 'px' );
+  card.style.setProperty('--x', x + 'px');
+  card.style.setProperty('--y', y + 'px');
 }
 
 
@@ -146,13 +170,13 @@ function onYouTubePlayerAPIReady() {
 
 // Player Ready
 function onPlayerReady(event) {
-	play.addEventListener( 'click', function() {
-		card.classList.add( 'video-is-open' );
-		setTimeout(function() {
-			video.style.display = 'block';
-			player.playVideo();
-		}, 500);
-	});
+  play.addEventListener('click', function () {
+    card.classList.add('video-is-open');
+    setTimeout(function () {
+      video.style.display = 'block';
+      player.playVideo();
+    }, 500);
+  });
 }
 
 
@@ -161,4 +185,3 @@ var tag = document.createElement('script');
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
