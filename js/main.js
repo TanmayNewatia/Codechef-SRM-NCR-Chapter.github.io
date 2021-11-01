@@ -1,27 +1,45 @@
-// dark Mode
+// dark theme switch
 
 let themeBtn = document.getElementById("themebtn")
-let theme = localStorage.getItem('data-theme');
+let theme = localStorage.getItem('data-theme')
 
 const changeThemeToDark = () => {
-  document.body.classList = 'dark'
+  document.body.classList = 'dark';
   document.body.style.backgroundImage = "url(../img/dark.png)";
-  localStorage.setItem("data-theme", "dark")
-}
-const changeThemeToLight = () => {
-  document.body.classList = ''
-  document.body.style.backgroundImage = "url(../img/light.png)";
-  localStorage.setItem("data-theme", 'light')
+  localStorage.setItem("data-theme", "dark");
+  document.querySelector('.nav-bar img').src = "img/logo dark.png";
 }
 
-themeBtn.addEventListener('change', () => {
-    let theme = localStorage.getItem('data-theme');
-    if (theme ==='dark'){
-        changeThemeToLight()
-    }else{
-        changeThemeToDark()
-    }   
-});
+const changeThemeToLight = () => {
+  document.body.classList = '';
+  document.body.style.backgroundImage = "url(../img/light.png)";
+  localStorage.setItem("data-theme", 'light');
+  document.querySelector('.nav-bar img').src = "img/logo light.png";
+}
+
+themeBtn.checked = false;
+
+function themeswitch() {
+  if (this.checked) {
+    changeThemeToDark()
+  } else {
+    changeThemeToLight()
+  }
+}
+themeBtn.addEventListener("click", themeswitch)
+
+window.onload = changetheme();
+
+function changetheme() {
+  const theme = localStorage.getItem('data-theme')
+
+  if (theme != null && theme === "dark") {
+    changeThemeToDark()
+    document.getElementById('themebtn').checked = true;
+  } else {
+    changeThemeToLight()
+  }
+}
 
 // typed.js
 

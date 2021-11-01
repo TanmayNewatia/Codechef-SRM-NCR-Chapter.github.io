@@ -20,8 +20,8 @@
   --secondary-color: #323232cc;
   --head-color: #fdfdfd;
   --text-color: #f2f2f2;
-  --card-text-color: #afa49c;
-  --about-bg: rgba(85, 85, 85, 0.5);
+  --card-text-color: #837a73;
+  --about-bg: #55555580;
   --social-bg: #555555a4;
 }
 
@@ -59,8 +59,9 @@ label {
   border-radius: 100px;
   margin: 0;
   width: 50px;
-  height: 20px;
-  background: var(--text-color);
+  height: 22px;
+  border: 1px solid var(--text-color);
+  background: var(--social-bg);
   text-indent: -9999px;
   cursor: pointer;
 }
@@ -72,13 +73,13 @@ label:after {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: var(--theme-color);
+  background: var(--text-color);
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked+label {
-  background: var(--text-color);
+  background: var(--social-bg);
 }
 
 input:checked+label:after {
@@ -261,7 +262,7 @@ label:active:after {
 .card:hover,
 .card2:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) !important;
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+  box-shadow: 0 24px 36px #0000001c,
     0 24px 46px var(--box-shadow-color);
 }
 
@@ -318,7 +319,7 @@ label:active:after {
 .card h4 {
   letter-spacing: 0.3mm;
   font: 700 20px Inconsolata;
-  color: #4C5656;
+  color: var(--card-text-color);
   margin-top: 200px;
   z-index: 1000;
   transition: color 0.5s ease-out;
@@ -327,7 +328,7 @@ label:active:after {
 .card p {
   font-size: 17px;
   text-align: justify;
-  color: #4C5656;
+  color: var(--card-text-color);
   z-index: 1000;
   padding: 10px 30px;
   transition: color 0.5s ease-out;
