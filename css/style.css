@@ -6,13 +6,23 @@
   --secondary-color: #f7f7f7cc;
   --head-color: #101010;
   --text-color: #444444;
-}
-
-.card-clr {
   --bg-color: #664E3E;
   --bg-color-light: #C9BAA2;
+  --card-text-color: #4C5656;
   --text-color-hover: #C9BAA2;
   --box-shadow-color: #0000002b;
+  --about-bg: #c8c8c81a;
+  --social-bg: #c8c8c8a4;
+}
+
+.dark {
+  --theme-color: #101010;
+  --secondary-color: #323232cc;
+  --head-color: #fdfdfd;
+  --text-color: #f2f2f2;
+  --card-text-color: #837a73;
+  --about-bg: #55555580;
+  --social-bg: #555555a4;
 }
 
 * {
@@ -25,7 +35,60 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-image: url(../img/white.png);
+  background-image: url(../img/light.png);
+}
+
+/* dark mode */
+
+.toggle-container {
+  position: relative;
+  padding: 20px 20px 20px 0;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  position: relative;
+  border-radius: 100px;
+  margin: 0;
+  width: 50px;
+  height: 22px;
+  border: 1px solid var(--text-color);
+  background: var(--social-bg);
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-color);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: var(--social-bg);
+}
+
+input:checked+label:after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
 }
 
 /* custom scrollbar */
@@ -53,7 +116,6 @@ body {
 }
 
 .navbar {
-  margin-right: 20px;
   transition: all 1s linear;
 }
 
@@ -114,6 +176,7 @@ body {
 
 .title {
   padding: 80px 0 25px 0;
+  color: var(--text-color);
 }
 
 .title h2 {
@@ -129,11 +192,12 @@ body {
 
 /* About */
 .about p {
+  padding: 20px;
   font: 400 1rem Inconsolata;
   line-height: 1.5;
   letter-spacing: 0.2mm;
-  background-color: #c8c8c81a;
-  padding: 20px;
+  color: var(--text-color);
+  background: var(--about-bg);
 }
 
 .stat {
@@ -146,7 +210,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #c8c8c81a;
+  background: var(--about-bg);
+  color: var(--text-color);
 }
 
 .stat span {
@@ -197,7 +262,7 @@ body {
 .card:hover,
 .card2:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) !important;
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+  box-shadow: 0 24px 36px #0000001c,
     0 24px 46px var(--box-shadow-color);
 }
 
@@ -218,7 +283,7 @@ body {
   width: 131px;
   height: 131px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--theme-color);
   border: 2px solid var(--bg-color);
   display: flex;
   justify-self: center;
@@ -254,7 +319,7 @@ body {
 .card h4 {
   letter-spacing: 0.3mm;
   font: 700 20px Inconsolata;
-  color: #4C5656;
+  color: var(--card-text-color);
   margin-top: 200px;
   z-index: 1000;
   transition: color 0.5s ease-out;
@@ -263,7 +328,7 @@ body {
 .card p {
   font-size: 17px;
   text-align: justify;
-  color: #4C5656;
+  color: var(--card-text-color);
   z-index: 1000;
   padding: 10px 30px;
   transition: color 0.5s ease-out;
@@ -408,7 +473,7 @@ body {
   display: block;
   height: 20px;
   width: 20px;
-  color: #000;
+  color: var(--head-color);
   transition: all 250ms;
 }
 
@@ -418,6 +483,7 @@ body {
 
 .info {
   transform: translateY(250px);
+  color: var(--text-color);
   transition: transform 1s cubic-bezier(.31, 1.21, .64, 1.02);
 }
 
@@ -452,7 +518,7 @@ body {
   padding: 10px;
   display: grid;
   place-items: center center;
-  background-color: #c8c8c8a4;
+  background: var(--social-bg);
   transition: all 250ms;
 }
 
@@ -494,11 +560,11 @@ body {
 .tool-tip {
   position: absolute;
   top: 0;
-  font: 400 15px Inconsolata;
+  font: 700 15px Inconsolata;
   letter-spacing: 0.3mm;
-  /* color: #f8f8f8; */
   padding: 5px 8px;
   border-radius: 5px;
+  color: #f2f2f2 !important;
   box-shadow: 0 10px 10px #0000001a;
   opacity: 0;
   pointer-events: none;
@@ -526,6 +592,7 @@ body {
 /* footer */
 
 .footer {
+  color: var(--text-color);
   font: 600 17px Inconsolata;
   padding: 15px 0;
   background: var(--secondary-color);
@@ -537,6 +604,12 @@ body {
 
 /* responsive */
 @media screen and (max-width: 768px) {
+  .toggle-container {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    padding: 20px 20px 20px 0;
+  }
 
   .card2 .txt-box[data-scroll="in"] {
     transform: translateY(0px);
