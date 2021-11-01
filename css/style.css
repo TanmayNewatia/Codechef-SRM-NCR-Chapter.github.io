@@ -441,7 +441,7 @@ label:active:after {
 }
 
 .connection:hover:nth-child(2) {
-  background-color: #333333;
+  background-color: #ffffff;
 }
 
 .connection:hover:last-child {
