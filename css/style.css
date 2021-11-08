@@ -17,7 +17,7 @@
 
 .dark {
   --theme-color: #101010;
-  --secondary-color: #323232cc;
+  --secondary-color: #1e1e1ee6;
   --head-color: #fdfdfd;
   --text-color: #f2f2f2;
   --card-text-color: #837a73;
@@ -42,7 +42,7 @@ body {
 
 .toggle-container {
   position: relative;
-  padding: 20px 20px 20px 0;
+  margin: 20px 20px 20px 0;
   font-size: 25px;
   cursor: pointer;
   display: flex;
@@ -125,7 +125,7 @@ label:active:after {
   right: 0;
   font-size: 30px;
   padding: 2px;
-  margin: 12px;
+  margin: 14px;
   text-decoration: none;
   color: var(--head-color);
 }
@@ -237,10 +237,10 @@ label:active:after {
 }
 
 .col-md-4 {
-  margin: 10px 0;
+  margin: 15px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .card {
@@ -603,12 +603,33 @@ label:active:after {
 }
 
 /* responsive */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 992px) {
   .toggle-container {
     position: absolute;
     top: 0;
     right: 60px;
-    padding: 20px 20px 20px 0;
+    margin: 20px 10px 20px 0;
+  }
+
+  .navbar {
+    margin-right: 0;
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+    letter-spacing: 0.5mm;
+  }
+
+  .nav-bar img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-container {
+    margin: 20px 0 20px 0;
+    transform: scale(0.9);
   }
 
   .card2 .txt-box[data-scroll="in"] {
@@ -653,19 +674,6 @@ label:active:after {
     width: 80% !important;
   }
 
-  .navbar {
-    margin-right: 0;
-  }
-
-  .navbar ul li {
-    margin: 20px 0;
-    letter-spacing: 0.5mm;
-  }
-
-  .nav-bar img {
-    width: 250px;
-  }
-
   .title h2 {
     font: 800 3rem Inconsolata;
   }
@@ -681,9 +689,12 @@ label:active:after {
 }
 
 @media screen and (max-width: 420px) {
+  .toggle-container {
+    transform: scale(0.8);
+  }
+  
   .nav-bar img {
-    width: 200px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .homepage h1 {
