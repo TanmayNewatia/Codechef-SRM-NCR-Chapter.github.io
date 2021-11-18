@@ -32,9 +32,13 @@
   font-family: Inconsolata;
 }
 
-html,
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
   background-image: url(../img/light.png);
 }
 
@@ -729,4 +733,19 @@ label:active:after {
 
 [data-scroll="out"] {
   opacity: 0;
+}
+
+
+/* table.css */
+
+table {
+  margin: 0 !important;
+  color: var(--text-color) !important;
+
+}
+
+.leaderboard {
+  color: var(--text-color) !important;
+  min-height: 100vh;
+  padding-top: 70px;
 }

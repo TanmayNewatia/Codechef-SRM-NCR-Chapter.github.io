@@ -71,11 +71,9 @@ body {
     width: 250%;
     height: 250%;
     position: absolute;
-    top: var(--y);
-    left: var(--x);
     transform: translate(-50%, -50%);
     opacity: 0;
-    background: radial-gradient(circle closest-side, rgba(0, 0, 0, 0.2), transparent);
+    background: #101010ab;
     transition: opacity 0.5s ease-out;
 }
 
