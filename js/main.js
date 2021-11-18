@@ -165,17 +165,6 @@ var player,
   play = document.querySelector('.card-play'),
   video = document.querySelector('.card-video');
 
-
-// Shine effect
-card.onmousemove = function (e) {
-  const x = e.pageX - card.offsetLeft;
-  const y = e.pageY - card.offsetTop;
-
-  card.style.setProperty('--x', x + 'px');
-  card.style.setProperty('--y', y + 'px');
-}
-
-
 // Youtube API
 function onYouTubePlayerAPIReady() {
   player = new YT.Player('video', {
