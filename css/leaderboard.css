@@ -1,0 +1,11 @@
+table {
+    margin: 0 !important;
+    color: var(--text-color) !important;
+
+}
+
+.leaderboard {
+    color: var(--text-color) !important;
+    min-height: 100vh;
+    padding-top: 70px;
+}
