@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inconsolata;
+  font-family: "Inconsolata";
 }
 
 html {
@@ -136,7 +136,7 @@ label:active:after {
 
 .navbar ul li a {
   text-decoration: none;
-  font: 800 22px Nunito;
+  font: 800 22px "Nunito";
   color: var(--text-color);
   text-transform: capitalize;
 }
@@ -169,13 +169,13 @@ label:active:after {
 }
 
 .homepage h1 {
-  font: 800 80px Inconsolata;
+  font: 800 80px "Inconsolata";
   z-index: 2;
 }
 
 .homepage p {
   z-index: 2;
-  font: 600 30px Inconsolata;
+  font: 600 30px "Inconsolata";
 }
 
 .title {
@@ -186,18 +186,18 @@ label:active:after {
 .title h2 {
   text-transform: capitalize;
   letter-spacing: 0.5mm;
-  font: 800 4rem Inconsolata;
+  font: 800 4rem "Inconsolata";
 }
 
 .title p {
   letter-spacing: 0.5mm;
-  font: 700 1.2rem Inconsolata;
+  font: 700 1.2rem "Inconsolata";
 }
 
 /* About */
 .about p {
   padding: 20px;
-  font: 400 1rem Inconsolata;
+  font: 400 1rem "Inconsolata";
   line-height: 1.5;
   letter-spacing: 0.2mm;
   color: var(--text-color);
@@ -219,11 +219,11 @@ label:active:after {
 }
 
 .stat span {
-  font: 900 30px Inconsolata;
+  font: 900 30px "Inconsolata";
 }
 
 .stat h3 {
-  font: 900 22px Inconsolata;
+  font: 900 22px "Inconsolata";
   letter-spacing: 0.5mm;
   margin: 10px;
 }
@@ -322,7 +322,7 @@ label:active:after {
 
 .card h4 {
   letter-spacing: 0.3mm;
-  font: 700 20px Inconsolata;
+  font: 700 20px "Inconsolata";
   color: var(--card-text-color);
   margin-top: 200px;
   z-index: 1000;
@@ -564,7 +564,7 @@ label:active:after {
 .tool-tip {
   position: absolute;
   top: 0;
-  font: 700 15px Inconsolata;
+  font: 700 15px "Inconsolata";
   letter-spacing: 0.3mm;
   padding: 5px 8px;
   border-radius: 5px;
@@ -597,7 +597,7 @@ label:active:after {
 
 .footer {
   color: var(--text-color);
-  font: 600 17px Inconsolata;
+  font: 600 17px "Inconsolata";
   padding: 15px 0;
   background: var(--secondary-color);
 }
@@ -657,11 +657,11 @@ label:active:after {
   }
 
   .homepage h1 {
-    font: 800 70px Inconsolata;
+    font: 800 70px "Inconsolata";
   }
 
   .homepage p {
-    font: 600 27px Inconsolata;
+    font: 600 27px "Inconsolata";
   }
 
   .about img {
@@ -679,11 +679,11 @@ label:active:after {
   }
 
   .title h2 {
-    font: 800 3rem Inconsolata;
+    font: 800 3rem "Inconsolata";
   }
 
   .title p {
-    font: 700 1rem Inconsolata;
+    font: 700 1rem "Inconsolata";
   }
 
   .socials ul li a {
@@ -702,15 +702,15 @@ label:active:after {
   }
 
   .homepage h1 {
-    font: 800 60px Inconsolata;
+    font: 800 60px "Inconsolata";
   }
 
   .homepage p {
-    font: 600 22px Inconsolata;
+    font: 600 22px "Inconsolata";
   }
 
   .footer {
-    font: 600 14px Inconsolata;
+    font: 600 14px "Inconsolata";
     padding: 10px 40px;
   }
 

@@ -1,11 +1,52 @@
-table {
-    margin: 0 !important;
-    color: var(--text-color) !important;
+body {
+    counter-reset: Sno;
+}
 
+table {
+    width: 70% !important;
+    background-color: var(--about-bg);
+    margin: auto !important;
+    color: var(--text-color) !important;
+    border-collapse: separate;
+}
+
+table tr th {
+    background-color: var(--about-bg);
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+table tr th:first-child {
+    width: 15% !important;
+}
+
+table tr th:last-child {
+    width: 25% !important;
+}
+
+table tr td {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .leaderboard {
     color: var(--text-color) !important;
     min-height: 100vh;
-    padding-top: 70px;
+}
+
+tr td:first-child:before {
+    counter-increment: Sno;
+    content: ""counter(Sno);
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 90% !important;
+    }
 }
