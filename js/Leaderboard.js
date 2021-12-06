@@ -27,7 +27,6 @@ $.ajax(settings).done(function (response) {
   };
 
   $.ajax(settings2).done(function (response) {
-    console.log(response.result.data.content );
     var row = '';
     for (var i = 0; i < response.result.data.content.length; i++) {
       row += '<tr>';
