@@ -40,6 +40,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-image: url(../img/light.png);
+  color: var(--text-color);
 }
 
 /* dark mode */
@@ -171,9 +172,11 @@ label:active:after {
 .homepage h1 {
   font: 800 80px "Inconsolata";
   z-index: 2;
+  color: #000;
 }
 
 .homepage p {
+  color: #000;
   z-index: 2;
   font: 600 30px "Inconsolata";
 }
