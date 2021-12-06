@@ -5,16 +5,16 @@ let theme = localStorage.getItem('data-theme')
 
 const changeThemeToDark = () => {
   document.body.classList = 'dark';
-  document.body.style.backgroundImage = "url(../img/dark.png)";
+  document.body.style.backgroundImage = "url(https://chef.is-a.dev/img/dark.png)";
   localStorage.setItem("data-theme", "dark");
-  document.querySelector('.nav-bar img').src = "img/logo dark.png";
+  document.querySelector('.nav-bar img').src = "https://chef.is-a.dev/img/logo-dark.png";
 }
 
 const changeThemeToLight = () => {
   document.body.classList = '';
-  document.body.style.backgroundImage = "url(../img/light.png)";
+  document.body.style.backgroundImage = "url(https://chef.is-a.dev/img/light.png)";
   localStorage.setItem("data-theme", 'light');
-  document.querySelector('.nav-bar img').src = "img/logo light.png";
+  document.querySelector('.nav-bar img').src = "https://chef.is-a.dev/img/logo-light.png";
 }
 
 themeBtn.checked = false;
