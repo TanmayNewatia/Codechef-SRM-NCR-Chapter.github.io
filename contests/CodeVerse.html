@@ -61,6 +61,32 @@
         <div class="title">
             <h2 class="text-center"> <span class="ct">CodeVerse</span> Solutions</h2>
         </div>
+
+        <div>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <ul class="nav nav-tabs border-0">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tabs-1">Python</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-2">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tabs-3">C++</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1">
+                    <pre> python code Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, labore.</pre>
+                </div>
+                <div class="tab-pane" id="tabs-2">
+                    <pre> Java code Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, nisi.</pre>
+                </div>
+                <div class="tab-pane" id="tabs-3">
+                    <pre>Cpp code Lorem ipsum dolor sit amet.</pre>
+                </div>
+            </div>
+        </div>
         <div class="question"></div>
     </div>
 
@@ -76,47 +102,40 @@
     <script src="../js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON("contest.json", function (data) {
-                var student = '';
+            $.getJSON("./contest.json", function (data) {
+                var code = '';
 
                 for (var i = 0; i < data.CodeVerse.length; i++) {
-                    student += '<div>';
-                    student += '<h4><span class="counter"></span> <a href="' + data.CodeVerse[i].link + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
-                    student += "<ul class='nav nav-tabs border-0'>";
-                    student += "<li class='nav-item'>";
-                    student += '<a class="nav-link active" data-toggle="tab" href="#tabs-1">Python</a>';
-                    student += "</li>";
-                    student += "<li class='nav-item'>";
-                    student += '<a class="nav-link" data-toggle="tab" href="#tabs-2">Java</a>';
-                    student += "</li>";
-                    student += "<li class='nav-item'>";
-                    student += '<a class="nav-link" data-toggle="tab" href="#tabs-3">C++</a>';
-                    student += "</li>";
-                    student += "</ul>";
-                    student += "<div class='tab-content'>";
-                    student += "<div class='tab-pane active' id='tabs-1'>";
-                    student += '<pre>' + data.CodeVerse[i].python + '</pre>';
-                    student += '</div>';
-                    student += "<div class='tab-pane' id='tabs-2'>";
-                    student += '<pre>' + data.CodeVerse[i].java + '</pre>';
-                    student += '</div>';
-                    student += "<div class='tab-pane' id='tabs-3'>";
-                    student += '<pre>' + data.CodeVerse[i].cpp + '</pre>';
-                    student += '</div>';
+                    code += '<div>';
+                        
+                    code += '<h4><span class="counter"></span> <a href="' + data.CodeVerse[i].link + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
+                    code += '<ul class="nav nav-tabs border-0">';
+                    code += '<li class="nav-item">';
+                    code += '<a class="nav-link active" data-toggle="tab" href="#tabs-1">Python</a>';
+                    code += '</li>';
+                    code += '<li class="nav-item">';
+                    code += '<a class="nav-link" data-toggle="tab" href="#tabs-2">Java</a>';
+                    code += '</li>';
+                    code += '<li class="nav-item">';
+                    code += '<a class="nav-link" data-toggle="tab" href="#tabs-3">C++</a>';
+                    code += '</li>';
+                    code += '</ul>';
+                    code += '<div class="tab-content">';
+                    code += '<div class="tab-pane active" id="tabs-1">';
+                    code += '<pre>' + data.CodeVerse[i].python + '</pre>';
+                    code += '</div>';
+                    code += '<div class="tab-pane" id="tabs-2">';
+                    code += '<pre>' + data.CodeVerse[i].java + '</pre>';
+                    code += '</div>';
+                    code += '<div class="tab-pane" id="tabs-3">';
+                    code += '<pre>' + data.CodeVerse[i].cpp + '</pre>';
+                    code += '</div>';
 
-                    student += '</div>';
+                    code += '</div>';
                 };
-                $('.question').append(student);
+                $('.question').append(code);
             });
         });
-        function openCode(codelg) {
-            var i;
-            var x = document.getElementsByClassName("code");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(codelg).style.display = "block";
-        }
     </script>
 </body>
 
