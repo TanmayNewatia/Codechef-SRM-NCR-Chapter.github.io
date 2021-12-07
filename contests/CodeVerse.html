@@ -55,13 +55,36 @@
         </div>
     </header>
 
+
+
     <div class="leaderboard container">
         <div class="title">
             <h2 class="text-center"> <span class="ct">CodeVerse</span> Solutions</h2>
         </div>
+        <div>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="w3-bar w3-black">
+                <button onclick="openCode('python')">Python</button>
+                <button onclick="openCode('java')">Java</button>
+                <button onclick="openCode('cpp')">C++</button>
+            </div>
+
+            <div id="python" class="code">
+                <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, labore.</pre>
+            </div>
+
+            <div id="java" class="code" style="display:none">
+                <pre>Paris is the capital of France.</pre>
+            </div>
+
+            <div id="cpp" class="code" style="display:none">
+                <pre>Tokyo is the capital of Japan.</pre>
+            </div>
+
+        </div>
         <div class="question"></div>
     </div>
-    
+
     <footer class="footer text-center">
         &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
         <br><br>
@@ -86,6 +109,14 @@
                 $('.question').append(student);
             });
         });
+        function openCode(codelg) {
+            var i;
+            var x = document.getElementsByClassName("code");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(codelg).style.display = "block";
+        }
     </script>
 </body>
 
