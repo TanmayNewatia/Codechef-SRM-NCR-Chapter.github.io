@@ -12,6 +12,8 @@ a:hover {
 }
 
 pre {
+    border: 1px solid var(--head-color);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
     font: 600 1rem "Nunito";
     color: var(--text-color);
     background: var(--about-bg);
@@ -22,6 +24,7 @@ pre {
     -moz-user-select: none;
     -ms-user-select: none;
 }
+
 .iconify-inline {
     font-size: 1rem;
     color: var(--text-color);
@@ -34,4 +37,16 @@ pre {
 .question span::before {
     counter-increment: span;
     content: "Q" counter(span) ".";
+}
+
+.nav-item {
+    background-color: transparent;
+}
+
+.nav-item .active {
+    color: var(--text-color) !important;
+    background-color: var(--about-bg) !important;
+    border: 1px solid var(--head-color) !important;
+    border-bottom-color: transparent !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
 }

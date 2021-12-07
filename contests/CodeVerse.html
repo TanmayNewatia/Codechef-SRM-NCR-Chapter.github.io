@@ -61,27 +61,6 @@
         <div class="title">
             <h2 class="text-center"> <span class="ct">CodeVerse</span> Solutions</h2>
         </div>
-        <div>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <div class="w3-bar w3-black">
-                <button onclick="openCode('python')">Python</button>
-                <button onclick="openCode('java')">Java</button>
-                <button onclick="openCode('cpp')">C++</button>
-            </div>
-
-            <div id="python" class="code">
-                <pre> python code Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, labore.</pre>
-            </div>
-
-            <div id="java" class="code" style="display:none">
-                <pre> Java code Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, nisi.</pre>
-            </div>
-
-            <div id="cpp" class="code" style="display:none">
-                <pre>Cpp code Lorem ipsum dolor sit amet.</pre>
-            </div>
-
-        </div>
         <div class="question"></div>
     </div>
 
@@ -103,7 +82,28 @@
                 for (var i = 0; i < data.CodeVerse.length; i++) {
                     student += '<div>';
                     student += '<h4><span class="counter"></span> <a href="' + data.CodeVerse[i].link + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
-                    student += '<pre>' + data.CodeVerse[i].code + '</pre>';
+                    student += "<ul class='nav nav-tabs border-0'>";
+                    student += "<li class='nav-item'>";
+                    student += '<a class="nav-link active" data-toggle="tab" href="#tabs-1">Python</a>';
+                    student += "</li>";
+                    student += "<li class='nav-item'>";
+                    student += '<a class="nav-link" data-toggle="tab" href="#tabs-2">Java</a>';
+                    student += "</li>";
+                    student += "<li class='nav-item'>";
+                    student += '<a class="nav-link" data-toggle="tab" href="#tabs-3">C++</a>';
+                    student += "</li>";
+                    student += "</ul>";
+                    student += "<div class='tab-content'>";
+                    student += "<div class='tab-pane active' id='tabs-1'>";
+                    student += '<pre>' + data.CodeVerse[i].python + '</pre>';
+                    student += '</div>';
+                    student += "<div class='tab-pane' id='tabs-2'>";
+                    student += '<pre>' + data.CodeVerse[i].java + '</pre>';
+                    student += '</div>';
+                    student += "<div class='tab-pane' id='tabs-3'>";
+                    student += '<pre>' + data.CodeVerse[i].cpp + '</pre>';
+                    student += '</div>';
+
                     student += '</div>';
                 };
                 $('.question').append(student);
