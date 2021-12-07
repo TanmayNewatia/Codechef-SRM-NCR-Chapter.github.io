@@ -1,55 +1,46 @@
 {
     "CodeVerse": [{
+        "code": "SQUARECOUNT",
         "link": "https://www.codechef.com/CVRS2021/problems/SQUARECOUNT",
         "ques": "Count the Squares",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     },{
+        "code": "PROFITMAX",
         "link": "https://www.codechef.com/CVRS2021/problems/PROFITMAX",
         "ques": "Maximizing Income",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     },{
+        "code": "ALEXT",
         "link": "https://www.codechef.com/CVRS2021/problems/ALEXT",
         "ques": "Alien Extermination",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     },{
+        "code": "HELPSHOP",
         "link": "https://www.codechef.com/CVRS2021/problems/HELPSHOP",
         "ques": "Help Shopkeeper",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     },{
-        "link": "https://www.codechef.com/CVRS2021/problems/CHEFSGAME",
+        "code": "CHEFSGAME",
+        "link": "https://www.codechef.com/CVRS2021/problems/",
         "ques": "Chef Plays a Game",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     },{
+        "code": "CHEFCOOKIES",
         "link": "https://www.codechef.com/CVRS2021/problems/CHEFCOOKIES",
         "ques": "Chef and Cookies",
         "python": "print('Hello, world!')",
         "java": "System.out.println(\"Hello, world!\");",
         "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
     }],
-    "Contest2": [{
-        "ques": "test",
-        "code": "code"
-    }, {
-        "ques": "test",
-        "code": "code"
-    }, {
-        "ques": "test",
-        "code": "code"
-    }, {
-        "ques": "test",
-        "code": "code"
-    }, {
-        "ques": "test",
-        "code": "code"
-    }]
+    "Contest2": []
 }
