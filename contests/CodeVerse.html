@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>CodeChef SRM NCR - Contests</title>
+    <meta name="title" content="CodeChef SRM NCR - LeaderBoard">
+    <meta name="description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
+    <meta property="og:title" content="CCodeChef SRM NCR - LeaderBoard">
+    <meta property="og:description" content="CodeChef SRM NCR Chapter">
+    <meta property="og:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
+    <meta property="twitter:title" content="CodeChef SRM NCR - LeaderBoard">
+    <meta property="twitter:description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
+    <meta property="twitter:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://codechef-srm-ncr-chapter.github.io/LeaderBoard" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contest.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header id="header" class="fixed-top">
+        <div class="nav-bar d-inline-flex align-items-center flex-column flex-md-row">
+            <img class="img-fluid" src="" alt="Logo">
+            <nav id="navbar" class="navbar d-none d-md-block ">
+                <ul class="list-unstyled align-content-center m-1 text-center flex-lg-row d-none d-lg-inline-flex">
+                    <li><a class="nav-link" href="../index">Home</a></li>
+                    <li><a class="nav-link" href="../index#About">About</a></li>
+                    <li><a class="nav-link" href="../Youtube">Youtube</a></li>
+                    <li><a class="nav-link" href="../index#lead">Leads</a></li>
+                    <li><a class="nav-link" href="../index#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-container">
+                <input type="checkbox" id="themebtn" name="theme" />
+                <label class="theme-switch" for="themebtn">Toggle</label>
+            </div>
+            <span class="menu-icon d-block d-lg-none iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
+        </div>
+    </header>
+
+    <div class="leaderboard container">
+        <div class="title">
+            <h2 class="text-center"> <span class="ct">CodeVerse</span> Solutions</h2>
+        </div>
+        <div class="question"></div>
+    </div>
+    
+    <footer class="footer text-center">
+        &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
+        <br><br>
+        Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("contest.json", function (data) {
+                var student = '';
+
+                for (var i = 0; i < data.CodeVerse.length; i++) {
+                    student += '<div>';
+                    student += '<h4><span class="counter"></span> <a href="' + data.CodeVerse[i].link + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
+                    student += '<pre>' + data.CodeVerse[i].code + '</pre>';
+                    student += '</div>';
+                };
+                $('.question').append(student);
+            });
+        });
+    </script>
+</body>
+
+</html

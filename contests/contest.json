@@ -1,0 +1,43 @@
+{
+    "CodeVerse": [{
+        "link": "https://www.codechef.com/CVRS2021/problems/SQUARECOUNT",
+        "ques": "Count the Squares",
+        "code": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    },{
+        "link": "https://www.codechef.com/CVRS2021/problems/PROFITMAX",
+        "ques": "Maximizing Income",
+        "code": "#include < iostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    },{
+        "link": "https://www.codechef.com/CVRS2021/problems/ALEXT",
+        "ques": "Alien Extermination",
+        "code": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    },{
+        "link": "https://www.codechef.com/CVRS2021/problems/HELPSHOP",
+        "ques": "Help Shopkeeper",
+        "code": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    },{
+        "link": "https://www.codechef.com/CVRS2021/problems/CHEFSGAME",
+        "ques": "Chef Plays a Game",
+        "code": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    },{
+        "link": "https://www.codechef.com/CVRS2021/problems/CHEFCOOKIES",
+        "ques": "Chef and Cookies",
+        "code": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+    }],
+    "Contest2": [{
+        "ques": "test",
+        "code": "code"
+    }, {
+        "ques": "test",
+        "code": "code"
+    }, {
+        "ques": "test",
+        "code": "code"
+    }, {
+        "ques": "test",
+        "code": "code"
+    }, {
+        "ques": "test",
+        "code": "code"
+    }]
+}
