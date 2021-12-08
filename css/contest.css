@@ -36,17 +36,32 @@ pre {
 
 .question span::before {
     counter-increment: span;
-    content: "Q" counter(span) ".";
+    content: "Q"counter(span) ".";
 }
 
 .nav-item {
-    background-color: transparent;
+    background-color: var(--about-bg);
 }
 
 .nav-item .active {
     color: var(--text-color) !important;
-    background-color: var(--about-bg) !important;
+    background-color: var(--theme-color) !important;
+    border: 1px solid var(--head-color) !important;
+    border-bottom-color: white !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.gist * {
+    background: var(--theme-color) !important;
+    color: var(--text-color) !important;
+}
+
+.gist .gist-data {
     border: 1px solid var(--head-color) !important;
     border-bottom-color: transparent !important;
-    border-radius: 0.5rem 0.5rem 0 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.gist .gist-meta {
+    border: 1px solid var(--head-color) !important;
 }

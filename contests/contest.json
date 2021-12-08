@@ -3,44 +3,44 @@
         "code": "SQUARECOUNT",
         "link": "https://www.codechef.com/CVRS2021/problems/SQUARECOUNT",
         "ques": "Count the Squares",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     },{
         "code": "PROFITMAX",
         "link": "https://www.codechef.com/CVRS2021/problems/PROFITMAX",
         "ques": "Maximizing Income",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     },{
         "code": "ALEXT",
         "link": "https://www.codechef.com/CVRS2021/problems/ALEXT",
         "ques": "Alien Extermination",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     },{
         "code": "HELPSHOP",
         "link": "https://www.codechef.com/CVRS2021/problems/HELPSHOP",
         "ques": "Help Shopkeeper",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     },{
         "code": "CHEFSGAME",
         "link": "https://www.codechef.com/CVRS2021/problems/",
         "ques": "Chef Plays a Game",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     },{
         "code": "CHEFCOOKIES",
         "link": "https://www.codechef.com/CVRS2021/problems/CHEFCOOKIES",
         "ques": "Chef and Cookies",
-        "python": "print('Hello, world!')",
-        "java": "System.out.println(\"Hello, world!\");",
-        "cpp": "#include <\fiostream> \n  int main() {\n\tstd::cout << 'Hello World!';\n\treturn 0;\n}"
+        "python": "https://gist.github.com/Drish-xD/6be631d6ddbdeb69e7d9bfd07161cc64.js",
+        "java": "https://gist.github.com/Drish-xD/c1d3e17743bc9685cb271332efc31bf0.js",
+        "cpp": "https://gist.github.com/Drish-xD/03a6ceb3f4be7fbc26dfaeb07455d12f.js"
     }],
     "Contest2": []
 }
