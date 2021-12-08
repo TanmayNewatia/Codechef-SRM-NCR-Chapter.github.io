@@ -89,7 +89,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".nav-link").on("click", function () {
+  $(".nav-link, .dropdown-item ").on("click", function () {
     $("nav ul").removeClass("flex-column d-block");
     $(".navbar").removeClass("d-block");
   });

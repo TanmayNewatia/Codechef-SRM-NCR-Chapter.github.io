@@ -45,10 +45,19 @@
       <img class="img-fluid" src="" alt="Logo">
       <nav id="navbar" class="navbar d-none d-lg-block ">
         <ul class="list-unstyled align-content-center m-1 text-center flex-lg-row d-none d-lg-inline-flex">
-          <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#About">About</a></li>
-          <li><a class="nav-link" href="Youtube">Youtube</a></li>
-          <li><a class="nav-link" href="#lead">Leads</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link2 d-flex align-items-center justify-content-center dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+            </a>
+            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#About">About</a>
+              <a class="dropdown-item" href="#domains">Domains</a>
+              <a class="dropdown-item" href="#lead">Leads</a>
+              <a class="dropdown-item" href="./Youtube">Youtube</a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="Leaderboard">LeaderBoard</a></li>
+          <li><a class="nav-link" href="./contests/CodeVerse">Contests</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>

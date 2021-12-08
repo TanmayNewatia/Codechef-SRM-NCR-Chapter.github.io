@@ -150,6 +150,18 @@ label:active:after {
   margin-left: 50px;
 }
 
+.nav-link2 {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu {
+  background-color: var(--secondary-color);
+}
+
+.dropdown-item {
+  padding: 8px 0;
+}
+
 /* Home page */
 
 .homepage {
@@ -632,6 +644,22 @@ label:active:after {
   .nav-bar img {
     width: 200px;
   }
+
+  .nav-link2 {
+    padding: 0 1rem;
+  }
+
+  .dropdown-menu {
+    padding: 0 0 0 50px !important;
+    border: 0;
+    position: relative;
+    background-color: transparent;
+    text-align: left !important;
+  }
+
+  .dropdown-item::before {
+    content:"• ";
+  }   
 }
 
 @media screen and (max-width: 768px) {
