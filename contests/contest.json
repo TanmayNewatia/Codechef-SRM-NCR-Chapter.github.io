@@ -2,39 +2,39 @@
     "CodeVerse": [{
         "code": "SQUARECOUNT",
         "ques": "Count the Squares",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/00bca6b462a2b13d20ddb79fd46e20b3",
+        "java": "https://gist.github.com/ArthrowAbstract/a367850726637eeb9eb5a3b57eda53cd",
+        "cpp": "https://gist.github.com/ArthrowAbstract/fdf5c5f8a0c42a260d047e2f0f202b74"
     }, {
         "code": "PROFITMAX",
         "ques": "Maximizing Income",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/87c56e3a224639306f4deac3ab4bf00e",
+        "java": "https://gist.github.com/ArthrowAbstract/ff3f7480ea93973e7b720aa6285aa347",
+        "cpp": "https://gist.github.com/ArthrowAbstract/a500654786ffebf84f47771e2b902066"
     }, {
         "code": "ALEXT",
         "ques": "Alien Extermination",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/9803bb0c8a274e4c08d9f3a226ce3fa3",
+        "java": "https://gist.github.com/ArthrowAbstract/8fae6ef2d57dbbae651e9e20d674131e",
+        "cpp": "https://gist.github.com/ArthrowAbstract/b20828b1a239b70f7d7f816d2c181097"
     }, {
         "code": "HELPSHOP",
         "ques": "Help Shopkeeper",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/3aec312a168cda351f543286cee2ba13",
+        "java": "https://gist.github.com/ArthrowAbstract/26c07144e8e0778e5432399df921c62e",
+        "cpp": "https://gist.github.com/ArthrowAbstract/186b464a4357d4091f9bfa64a3726375"
     }, {
         "code": "CHEFSGAME",
         "ques": "Chef Plays a Game",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/fc51fad3d53cf321fcc80d7177177852",
+        "java": "https://gist.github.com/ArthrowAbstract/a98ddf5306e82c3040e5de147c00212e",
+        "cpp": "https://gist.github.com/ArthrowAbstract/c8e3c33c2e52380b8de069b7d53173ab"
     }, {
         "code": "CHEFCOOKIES",
         "ques": "Chef and Cookies",
-        "python": "https://gist.github.com/Drish-xD/45099aad382e2a3cb8d2c9b47dfeb712",
-        "java": "https://gist.github.com/Drish-xD/a3a0b810057c2d4f47508368f8caf98c",
-        "cpp": "https://gist.github.com/Drish-xD/324d556844c5fd31059afc41815855d8"
+        "python": "https://gist.github.com/ArthrowAbstract/0d114fd76cce72446898c6b3f68c05ea",
+        "java": "https://gist.github.com/ArthrowAbstract/3045227c6e90b1914da8edc5ceca21df",
+        "cpp": "https://gist.github.com/ArthrowAbstract/d7a2200d7888b2676e07da8c765b832d"
     }],
     "Contest2": []
 }
