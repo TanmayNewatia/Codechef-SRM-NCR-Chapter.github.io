@@ -8,14 +8,14 @@ const changeThemeToDark = () => {
   document.body.style.backgroundImage = "url(https://chef.is-a.dev/img/dark.png)";
   localStorage.setItem("data-theme", "dark");
   document.querySelector('.nav-bar img').src = "https://chef.is-a.dev/img/logo-dark.png";
-}
+};
 
 const changeThemeToLight = () => {
   document.body.classList = '';
   document.body.style.backgroundImage = "url(https://chef.is-a.dev/img/light.png)";
   localStorage.setItem("data-theme", 'light');
   document.querySelector('.nav-bar img').src = "https://chef.is-a.dev/img/logo-light.png";
-}
+};
 
 themeBtn.checked = false;
 
@@ -25,8 +25,8 @@ function themeswitch() {
   } else {
     changeThemeToLight()
   }
-}
-themeBtn.addEventListener("click", themeswitch)
+};
+themeBtn.addEventListener("click", themeswitch);
 
 window.onload = changetheme();
 
@@ -39,7 +39,7 @@ function changetheme() {
   } else {
     changeThemeToLight()
   }
-}
+};
 
 // typed.js
 
@@ -54,7 +54,7 @@ if (typed) {
     backSpeed: 50,
     backDelay: 2000
   });
-}
+};
 
 
 // Aos
@@ -64,18 +64,6 @@ AOS.init({
   duration: 600,
   once: false,
 });
-
-
-// tooltip
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-ScrollOut({
-  targets: '.card2 .txt-box, .card2 .info, .card2 .connection:first-child, .card2 .connection:last-child, .card2 .connection:nth-child(2)'
-});
-
 
 // menu-btn
 
@@ -89,12 +77,21 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".nav-link, .dropdown-item ").on("click", function () {
+  $(".nav-link, .dropdown-item, body section").on("click", function () {
     $("nav ul").removeClass("flex-column d-block");
     $(".navbar").removeClass("d-block");
   });
 });
 
+// tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+ScrollOut({
+  targets: '.card2 .txt-box, .card2 .info, .card2 .connection:first-child, .card2 .connection:last-child, .card2 .connection:nth-child(2)'
+});
 
 // stats counter jquery
 
