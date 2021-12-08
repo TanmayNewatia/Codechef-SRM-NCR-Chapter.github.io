@@ -40,28 +40,35 @@ pre {
 }
 
 .nav-item {
+    font-weight: 700 !important;
     background-color: var(--about-bg);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nav-item:hover {
+    background-color: var(--secondary-color);
 }
 
 .nav-item .active {
-    color: var(--text-color) !important;
-    background-color: var(--theme-color) !important;
-    border: 1px solid var(--head-color) !important;
-    border-bottom-color: white !important;
+    font-weight: 900 !important;
+    color: #2DBA4E !important;
+    background-color: var(--secondary-color) !important;
+    border-bottom-color: var(--secondary-color) !important;
     border-radius: 0.5rem 0.5rem 0 0 !important;
 }
 
 .gist * {
-    background: var(--theme-color) !important;
+    background: var(--secondary-color) !important;
     color: var(--text-color) !important;
-}
+    font-weight: 800;
+    letter-spacing: 0.5 px;
+}   
 
-.gist .gist-data {
-    border: 1px solid var(--head-color) !important;
-    border-bottom-color: transparent !important;
+.gist .gist-file {
     border-top-left-radius: 0 !important;
 }
 
-.gist .gist-meta {
-    border: 1px solid var(--head-color) !important;
+.gist .gist-meta a {
+    color: #2DBA4E !important;
+    font-weight: 900 !important;
 }
