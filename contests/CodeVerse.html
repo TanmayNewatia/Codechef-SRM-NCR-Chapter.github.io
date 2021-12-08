@@ -83,7 +83,7 @@
                 for (var i = 0; i < data.CodeVerse.length; i++) {
                     code += '<div>';
 
-                    code += '<h4><span class="counter"></span> <a href="' + data.CodeVerse[i].link + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
+                    code += '<h4><span class="counter"></span> <a href="https://www.codechef.com/CVRS2021/problems/' + data.CodeVerse[i].code + '">' + data.CodeVerse[i].ques + '<span class="iconify-inline" data-icon="fa-solid:external-link-alt"></span></a> </h4>';
                     code += '<ul class="nav nav-tabs border-0">';
                     code += '<li class="nav-item">';
                     code += '<a class="nav-link active" data-toggle="tab" href="#' + data.CodeVerse[i].code + '-1">Python</a>';
@@ -97,14 +97,15 @@
                     code += '</ul>';
                     code += '<div class="tab-content">';
                     code += '<div class="tab-pane active" id="' + data.CodeVerse[i].code + '-1">';
-                    code += '<script src="' + data.CodeVerse[i].python + '"><\/script>';
+                    code += '<script src="' + data.CodeVerse[i].python + '.js"><\/script>';
                     code += '</div>';
                     code += '<div class="tab-pane" id="' + data.CodeVerse[i].code + '-2">';
-                    code += '<script src="' + data.CodeVerse[i].java + '"><\/script>';
+                    code += '<script src="' + data.CodeVerse[i].java + '.js"><\/script>';
                     code += '</div>';
                     code += '<div class="tab-pane" id="' + data.CodeVerse[i].code + '-3">';
-                    code += '<script src="' + data.CodeVerse[i].cpp + '"><\/script>';
+                    code += '<script src="' + data.CodeVerse[i].cpp + '.js"><\/script>';
                     code += '</div>';
+
                     code += '</div>';
                 };
                 postscribe('#question', code);
