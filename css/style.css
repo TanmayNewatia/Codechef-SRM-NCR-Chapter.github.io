@@ -3,7 +3,7 @@
 
 :root {
   --theme-color: #fdfdfd;
-  --secondary-color: #f7f7f7cc;
+  --secondary-color: #f0f0f0cc;
   --head-color: #101010;
   --text-color: #444444;
   --bg-color: #664E3E;
@@ -17,7 +17,7 @@
 
 .dark {
   --theme-color: #101010;
-  --secondary-color: #1e1e1ee6;
+  --secondary-color: #1e1e1ecc;
   --head-color: #fdfdfd;
   --text-color: #f2f2f2;
   --card-text-color: #837a73;
@@ -43,7 +43,65 @@ body {
   color: var(--text-color);
 }
 
-/* dark mode */
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--theme-color);
+  border-radius: 10px;
+}
+
+/* navbar */
+.side {
+  position: fixed;
+  text-decoration: none !important;
+  right: -600px;
+  bottom: 0;
+  width: 350px;
+  height: calc(100vh - 80px);
+  background-color: var(--secondary-color) !important;
+  transition: all 0.5s ease-in-out, background-color 0s;
+}
+
+.side .nav-link {
+  color: var(--text-color);
+  margin: 10px 30px;
+  font: 600 24px "Nunito";
+}
+
+.open {
+  right: 0;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--secondary-color);
+  justify-content: center;
+}
+
+header .iconify-inline {
+  position: relative;
+  font-size: 40px;
+  padding: 2px;
+  margin: 14px 20px;
+  text-decoration: none;
+  color: var(--head-color);
+}
+
+.nav-social .iconify-inline{
+  font-size: 30px;
+}
+
+/* dark mode taggler */
 
 .toggle-container {
   position: relative;
@@ -96,70 +154,11 @@ label:active:after {
   width: 45px;
 }
 
-/* custom scrollbar */
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: var(--text-color);
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--theme-color);
-  border-radius: 10px;
-}
-
-/* navbar */
-
-.nav-bar {
-  width: 100%;
-  background-color: var(--secondary-color);
-  justify-content: center;
-}
-
-.navbar {
-  transition: all 1s linear;
-}
-
-.nav-bar .iconify-inline {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 30px;
-  padding: 2px;
-  margin: 14px;
-  text-decoration: none;
-  color: var(--head-color);
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  font: 800 22px "Nunito";
-  color: var(--text-color);
-  text-transform: capitalize;
-}
-
 .nav-bar img {
   width: 300px;
   padding: 10px 0;
   margin-right: auto;
   margin-left: 50px;
-}
-
-.nav-link2 {
-  padding: 0.5rem 1rem;
-}
-
-.dropdown-menu {
-  background-color: var(--secondary-color);
-}
-
-.dropdown-item {
-  padding: 8px 0;
 }
 
 /* Home page */
@@ -402,7 +401,7 @@ label:active:after {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--text-color);
+  background-color: var(--card-text-color);
   opacity: 0;
   transition: opacity 0.15s ease-in;
 }
@@ -632,37 +631,27 @@ label:active:after {
     margin: 20px 10px 20px 0;
   }
 
-  .navbar {
-    margin-right: 0;
+  .side {
+    height: calc(100vh - 60px);
   }
 
-  .navbar ul li {
-    margin: 20px 0;
-    letter-spacing: 0.5mm;
+  .nav-bar .iconify-inline {
+    font-size: 30px;
+    padding: 2px;
+    margin: 14px 20px;
   }
 
   .nav-bar img {
     width: 200px;
   }
-
-  .nav-link2 {
-    padding: 0 1rem;
-  }
-
-  .dropdown-menu {
-    padding: 0 0 0 50px !important;
-    border: 0;
-    position: relative;
-    background-color: transparent;
-    text-align: left !important;
-  }
-
-  .dropdown-item::before {
-    content:"• ";
-  }   
 }
 
 @media screen and (max-width: 768px) {
+  .side {
+    width: 100%;
+    text-align: center;
+  }
+
   .toggle-container {
     margin: 20px 0 20px 0;
     transform: scale(0.9);
@@ -751,7 +740,6 @@ label:active:after {
     font-size: 27px;
   }
 }
-
 
 /* ScrollOut animations */
 [data-scroll] {

@@ -67,19 +67,19 @@ AOS.init({
 
 // menu-btn
 
+
 $(document).ready(function () {
   $(".menu-icon").on("click", function () {
-    setTimeout(function () {
-      $("nav ul").toggleClass("flex-column d-block");
-      $(".navbar").toggleClass("d-block");
-    }, 50);
+    $(".side").toggleClass("open");
+    $("body").toggleClass("overflow-hidden");
+
   });
 });
 
 $(document).ready(function () {
-  $(".nav-link, .dropdown-item, body section").on("click", function () {
-    $("nav ul").removeClass("flex-column d-block");
-    $(".navbar").removeClass("d-block");
+  $(".nav-link, body section").on("click", function () {
+    $(".side").removeClass("open");
+    $("body").removeClass("overflow-hidden");
   });
 });
 
