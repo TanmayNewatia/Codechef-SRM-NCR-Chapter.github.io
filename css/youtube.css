@@ -8,6 +8,7 @@ body {
     height: auto;
     display: grid;
     place-items: center center;
+    padding-bottom: 50px;
 }
 
 .yt-card {
