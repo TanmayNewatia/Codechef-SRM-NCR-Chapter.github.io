@@ -2,112 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Primary Meta Tags -->
-    <title>CodeChef SRM NCR - LeaderBoard</title>
-    <meta name="title" content="CodeChef SRM NCR - LeaderBoard">
-    <meta name="description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>CodeChef SRM NCR - LeaderBoard</title>
+  <meta name="title" content="CodeChef SRM NCR - LeaderBoard">
+  <meta name="description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
-    <meta property="og:title" content="CCodeChef SRM NCR - LeaderBoard">
-    <meta property="og:description" content="CodeChef SRM NCR Chapter">
-    <meta property="og:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
+  <meta property="og:title" content="CCodeChef SRM NCR - LeaderBoard">
+  <meta property="og:description" content="CodeChef SRM NCR Chapter">
+  <meta property="og:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
-    <meta property="twitter:title" content="CodeChef SRM NCR - LeaderBoard">
-    <meta property="twitter:description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
-    <meta property="twitter:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://codechef-srm-ncr-chapter.github.io/LeaderBoard" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/leaderboard.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://codechef-srm-ncr-chapter.github.io/LeaderBoard">
+  <meta property="twitter:title" content="CodeChef SRM NCR - LeaderBoard">
+  <meta property="twitter:description" content="CodeChef SRM NCR Chapter LeaderBoard Page">
+  <meta property="twitter:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codechef-srm-ncr-chapter.github.io/LeaderBoard" />
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/leaderboard.css">
 </head>
 
 <body>
-    <!-- navbar -->
-    <header id="header" class="fixed-top">
-        <div class="nav-bar d-inline-flex align-items-center flex-column flex-lg-row">
-            <img class="img-fluid" src="" alt="Logo">
-            <nav id="navbar" class="navbar d-none d-lg-block ">
-                <ul class="list-unstyled align-content-center m-1 text-center flex-lg-row d-none d-lg-inline-flex">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link2 d-flex align-items-center justify-content-center dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Home
-                        </a>
-                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#About">About</a>
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#domains">Domains</a>
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#lead">Leads</a>
-                            <a class="dropdown-item" href="./Youtube">Youtube</a>
-                        </div>
-                    </li>
-                    <li><a class="nav-link" href="#">LeaderBoard</a></li>
-                    <li><a class="nav-link" href="./contests/CodeVerse">Contests</a></li>
-                    <li><a class="nav-link" href="https://chef.is-a.dev/#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="toggle-container">
-                <input type="checkbox" id="themebtn" name="theme" />
-                <label class="theme-switch" for="themebtn">Toggle</label>
-            </div>
-            <span class="menu-icon d-block d-lg-none iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
+  <!-- navbar -->
+  <header id="header" class="fixed-top">
+    <div class="side overflow-hidden">
+      <ul class="list-unstyled ps-0">
+        <li> <a class="nav-link" href="https://chef.is-a.dev/">Home</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#about">About</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#team">Team</a> </li>
+        <li> <a class="nav-link" href="./contests/CodeVerse">Events</a> </li>
+        <li> <a class="nav-link" href="./Leaderboard">Leaderboard</a> </li>
+        <li> <a class="nav-link" href="./Youtube">Youtube</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#contact">Contact</a> </li>
+        <hr class="m-3">
+
+        <div class="nav-social">
+          <ul class="list-unstyled d-flex flex-wrap mx-5 justify-content-center">
+            <li><a class="linkedin" href="https://www.linkedin.com/in/srm-ncr-codechef-chapter-/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:linkedin-box-fill"></span>
+              </a></li>
+            <li><a class="instagram" href="https://www.instagram.com/codechef_srmncr/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:instagram-fill"></span>
+              </a></li>
+            <li><a class="youtube" href="https://www.youtube.com/channel/UCiihnYRQAWywnBQANlFrW0A" target="_blank">
+                <span class="iconify-inline" data-icon="ri:youtube-fill"></span>
+              </a></li>
+            <li><a class="github" href="https://github.com/Codechef-SRM-NCR-Chapter" target="_blank">
+                <span class="iconify-inline" data-icon="ri:github-fill"></span>
+              </a></li>
+            <li><a class="gmail" href="mailto:srmcodechefchapter@gmail.com" target="_blank">
+                <span class="iconify-inline" data-icon="mdi:gmail"></span>
+              </a></li>
         </div>
-    </header>
-    <div class="leaderboard container">
-        <div class="title text-center overflow-hidden" data-aos="fade-up">
-            <h2 class="text-center">LeaderBoard</h2>
-        </div>
-        <table class="table text-center text-md-left table-borderless" data-aos="fade" data-aos-duration="1300">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Rating</th>
-                </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-        </table>
+      </ul>
+      <a href="#" class="">
+        <span class="iconify-inline position-absolute bottom-0 end-0 m-3" data-icon="bi:arrow-up-circle-fill"></span>
+      </a>
     </div>
 
-    <footer class="footer text-center">
-        &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
-        <br><br>
-        Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <script src="./js/main.min.js"></script>
-    <!-- script -->
-    <script>
-        var settings = {
-            "url": "https://codechef-website-backend-production.up.railway.app/",
-            "method": "GET",
-            "timeout": 0,
-          };
-          $.ajax(settings).done(function (response) {
-            var row = '';
-            for (var i = 0; i < response.result.data.content.length; i++) {
-              row += '<tr>';
-              row += '<td>' + (i+1) + '.</td>';
-              row += '<td>' + response.result.data.content[i].fullname + '</td>';
-              row += '<td>' + response.result.data.content[i].rating + '</td>';
-              row += '</tr>';
-            }
-            $('#tbody').append(row);
-          });
-    </script>
+    <div class="nav-bar d-inline-flex align-items-center flex-row">
+      <img class="img-fluid" src="" alt="Logo">
+      <div class="toggle-container">
+        <input type="checkbox" id="themebtn" name="theme" />
+        <label class="theme-switch" for="themebtn">Toggle</label>
+      </div>
+      <span class="menu-icon iconify-inline" data-icon="heroicons-solid:menu-alt-1" data-flip="horizontal"></span>
+    </div>
+  </header>
+
+
+  <div class="leaderboard container">
+    <div class="title text-center overflow-hidden" data-aos="fade-up">
+      <h2 class="text-center">LeaderBoard</h2>
+    </div>
+    <table class="table text-center text-md-left table-borderless" data-aos="fade" data-aos-duration="1300">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <footer class="footer text-center">
+    &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
+    <br><br>
+    Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script src="./js/main.min.js"></script>
+  <!-- script -->
+  <script>
+    var settings = {
+      "url": "https://codechef-website-backend-production.up.railway.app/",
+      "method": "GET",
+      "timeout": 0,
+    };
+    $.ajax(settings).done(function (response) {
+      var row = '';
+      for (var i = 0; i < response.result.data.content.length; i++) {
+        row += '<tr>';
+        row += '<td>' + (i + 1) + '.</td>';
+        row += '<td>' + response.result.data.content[i].fullname + '</td>';
+        row += '<td>' + response.result.data.content[i].rating + '</td>';
+        row += '</tr>';
+      }
+      $('#tbody').append(row);
+    });
+  </script>
 
 </body>
 
