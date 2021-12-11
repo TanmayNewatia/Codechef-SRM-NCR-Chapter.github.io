@@ -31,9 +31,14 @@
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/youtube.css">
+  <link rel="preload" href="./js/main.min.js" as="script">
+  <link rel="preload" href="./css/style.min.css" as="style">
 </head>
 
-<body>
+<body class="overflow-hidden">
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
 
   <!-- navbar -->
   <header id="header" class="fixed-top">
@@ -96,11 +101,11 @@
       </div>
     </div>
   </section>
-  
+
   <footer class="footer text-center">
     &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
     <br><br>
-    Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
+    Made By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a> & <a href="https://tanish2002.is-a.dev" target="_blank">Tanish</a>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

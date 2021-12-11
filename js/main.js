@@ -65,6 +65,14 @@ AOS.init({
   once: false,
 });
 
+// preloader
+
+$(window).on('load', function() { 
+  $('.spinner').fadeOut('slow'); 
+  $('.preloader').delay(350).fadeOut('slow'); 
+  $('body').delay(350).removeClass('overflow-hidden');
+})
+
 // menu-btn
 
 
@@ -72,17 +80,29 @@ $(document).ready(function () {
   $(".menu-icon").on("click", function () {
     $(".side").toggleClass("open");
     $("body").toggleClass("overflow-hidden");
-
+    $('.nav-bar').addClass('black');
   });
 });
 
 $(document).ready(function () {
-  $(".nav-link, body section").on("click", function () {
+  $(".nav-link, body section, .top-btn").on("click", function () {
     $(".side").removeClass("open");
     $("body").removeClass("overflow-hidden");
+    if ($(window).scrollTop()) {
+      $('.nav-bar').removeClass('black');
+    }
   });
 });
 
+// on scroll animation navbar
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $('.nav-bar').addClass('black');
+  } else {
+    $('.nav-bar').removeClass('black');
+  }
+});
 // tooltip
 
 $(function () {

@@ -29,9 +29,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.min.css">
   <link rel="stylesheet" href="../css/contest.css">
+  <link rel="preload" href="./contest.json" as="fetch">
+  <link rel="preload" href="../js/main.min.js" as="script">
+  <link rel="preload" href="../css/style.min.css" as="style">
 </head>
 
-<body>
+<body class="overflow-hidden">
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+  
   <!-- navbar -->
   <header id="header" class="fixed-top">
     <div class="side overflow-hidden">
@@ -91,7 +98,7 @@
   <footer class="footer text-center">
     &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
     <br><br>
-    Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
+    Made By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a> & <a href="https://tanish2002.is-a.dev" target="_blank">Tanish</a>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -100,7 +107,7 @@
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
   <script src="../js/main.min.js"></script>
-  
+
   <script type="text/javascript">
     $(document).ready(function () {
       $.getJSON("./contest.json", function (data) {
