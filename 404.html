@@ -2,102 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Primary Meta Tags -->
-    <title>Page Not Found!!!</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>Page Not Found!!!</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./js/main.min.js" as="script">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <!-- Google Console -->
+  <meta name="google-site-verification" content="L4HqqgEc73vIXkf97vImU0GbParzwcYSImPHkK5GxXE" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-434NX2K8G9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-434NX2K8G9');
+  </script>
+  <link rel="prerender" href="https://chef.is-a.dev/contests/CodeVerse">
+  <link rel="prerender" href="https://chef.is-a.dev/Leaderboard">
+  <link rel="prerender" href="https://chef.is-a.dev/Youtube">
+  <link rel="prerender" href="https://chef.is-a.dev/">
 </head>
 
 <style>
-    section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  section {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  img {
+    padding-top: 100px;
+    width: 40%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  section>a {
+    color: #f8f8f8;
+    background-color: #664E3E;
+    padding: 7px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  section>a:hover {
+    transform: translate3d(2px, -2px, 0);
+    text-decoration: none;
+    color: #f8f8f8;
+  }
+
+  @media screen and (max-width: 768px) {
     img {
-        padding-top: 100px;
-        width: 40%;
-        height: auto;
-        padding-bottom: 30px;
+      width: 80%;
     }
-
-    section>a {
-        color: #f8f8f8;
-        background-color: #664E3E;
-        padding: 7px 20px;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-    }
-
-    section>a:hover {
-        transform: translate3d(2px, -2px, 0);
-        text-decoration: none;
-        color: #f8f8f8;
-    }
-
-    @media screen and (max-width: 768px) {
-        img {
-            width: 80%;
-        }
-    }
+  }
 </style>
 
 <body class="overflow-hidden">
 
-    <!-- navbar -->
-    <header id="header" class="fixed-top">
-        <div class="nav-bar d-inline-flex align-items-center flex-column flex-lg-row">
-            <img class="img-fluid" src="" alt="Logo">
-            <nav id="navbar" class="navbar d-none d-lg-block ">
-                <ul class="list-unstyled align-content-center m-1 text-center flex-lg-row d-none d-lg-inline-flex">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link2 d-flex align-items-center justify-content-center dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Home
-                        </a>
-                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#About">About</a>
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#domains">Domains</a>
-                            <a class="dropdown-item" href="https://chef.is-a.dev/#lead">Leads</a>
-                            <a class="dropdown-item" href="./Youtube">Youtube</a>
-                        </div>
-                    </li>
-                    <li><a class="nav-link" href="./Leaderboard">LeaderBoard</a></li>
-                    <li><a class="nav-link" href="./contests/CodeVerse">Contests</a></li>
-                    <li><a class="nav-link" href="https://chef.is-a.dev/#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="toggle-container">
-                <input type="checkbox" id="themebtn" name="theme" />
-                <label class="theme-switch" for="themebtn">Toggle</label>
-            </div>
-            <span class="menu-icon d-block d-lg-none iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
+  <!-- navbar -->
+  <header id="header" class="fixed-top">
+    <div class="side overflow-hidden">
+      <ul class="list-unstyled ps-0">
+        <li> <a class="nav-link" href="https://chef.is-a.dev/">Home</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#about">About</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#team">Team</a> </li>
+        <li> <a class="nav-link" href="./contests/CodeVerse">Events</a> </li>
+        <li> <a class="nav-link" href="./Leaderboard">Leaderboard</a> </li>
+        <li> <a class="nav-link" href="./Youtube">Youtube</a> </li>
+        <li> <a class="nav-link" href="https://chef.is-a.dev/#contact">Contact</a> </li>
+        <hr class="m-3">
+
+        <div class="nav-social">
+          <ul class="list-unstyled d-flex flex-wrap mx-5 justify-content-center">
+            <li><a class="linkedin" href="https://www.linkedin.com/in/srm-ncr-codechef-chapter-/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:linkedin-box-fill"></span>
+              </a></li>
+            <li><a class="instagram" href="https://www.instagram.com/codechef_srmncr/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:instagram-fill"></span>
+              </a></li>
+            <li><a class="youtube" href="https://www.youtube.com/channel/UCiihnYRQAWywnBQANlFrW0A" target="_blank">
+                <span class="iconify-inline" data-icon="ri:youtube-fill"></span>
+              </a></li>
+            <li><a class="github" href="https://github.com/Codechef-SRM-NCR-Chapter" target="_blank">
+                <span class="iconify-inline" data-icon="ri:github-fill"></span>
+              </a></li>
+            <li><a class="gmail" href="mailto:srmcodechefchapter@gmail.com" target="_blank">
+                <span class="iconify-inline" data-icon="mdi:gmail"></span>
+              </a></li>
         </div>
-    </header>
+      </ul>
+      <a href="#" class="">
+        <span class="iconify-inline position-absolute bottom-0 end-0 m-3" data-icon="bi:arrow-up-circle-fill"></span>
+      </a>
+    </div>
 
-    <section>
-        <img src="./img/404 Error.svg" alt="404 Error">
-        <a href="https://chef.is-a.dev/">Go Back <span class="iconify" data-icon="bi:arrow-right"></span></a>
-    </section>
+    <div class="nav-bar d-inline-flex align-items-center flex-row">
+      <img class="img-fluid" src="" alt="Logo">
+      <div class="toggle-container">
+        <input type="checkbox" id="themebtn" name="theme" />
+        <label class="theme-switch" for="themebtn">Toggle</label>
+      </div>
+      <span class="menu-icon iconify-inline" data-icon="heroicons-solid:menu-alt-1" data-flip="horizontal"></span>
+    </div>
+  </header>
+  <section>
+    <img src="./img/404 Error.svg" alt="404 Error">
+    <a href="https://chef.is-a.dev/">Go Back <span class="iconify" data-icon="bi:arrow-right"></span></a>
+  </section>
 
-    <footer class="footer position-absolute fixed-bottom text-center">
-        &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
-        <br><br>
-        Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
-    </footer>
+  <footer class="footer text-center">
+    &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
+    <br><br>
+    Made By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a> & <a href="https://tanish2002.is-a.dev" target="_blank">Tanish</a>
+  </footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <script src="./js/main.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

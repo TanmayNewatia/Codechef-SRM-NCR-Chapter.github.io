@@ -25,47 +25,82 @@
   <meta property="twitter:image" content="https://codechef-srm-ncr-chapter.github.io/img/Screenshot.png">
   <!-- Google Console -->
   <meta name="google-site-verification" content="L4HqqgEc73vIXkf97vImU0GbParzwcYSImPHkK5GxXE" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-434NX2K8G9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-434NX2K8G9');
+  </script>
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://codechef-srm-ncr-chapter.github.io/" />
   <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./img/srm.mp4" as="video" type="video/mp4">
-  <link rel="preload" href="./js/main.js" as="script">
+  <link rel="preload" href="./js/main.min.js" as="script">
   <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="prerender" href="https://chef.is-a.dev/contests/CodeVerse">
+  <link rel="prerender" href="https://chef.is-a.dev/Leaderboard">
+  <link rel="prerender" href="https://chef.is-a.dev/Youtube">
 </head>
 
-<body class="">
+<body class="overflow-hidden">
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
 
   <!-- navbar -->
   <header id="header" class="fixed-top">
-    <div class="nav-bar d-inline-flex align-items-center flex-column flex-lg-row">
+    <div class="side overflow-hidden">
+      <ul class="list-unstyled ps-0">
+        <li> <a class="nav-link" href="#">Home</a> </li>
+        <li> <a class="nav-link" href="#about">About</a> </li>
+        <li> <a class="nav-link" href="#team">Team</a> </li>
+        <li> <a class="nav-link" href="./contests/CodeVerse">Events</a> </li>
+        <li> <a class="nav-link" href="./Leaderboard">Leaderboard</a> </li>
+        <li> <a class="nav-link" href="./Youtube">Youtube</a> </li>
+        <li> <a class="nav-link" href="#contact">Contact</a> </li>
+        <hr class="m-3">
+
+        <div class="nav-social">
+          <ul class="list-unstyled d-flex flex-wrap mx-5 justify-content-center">
+            <li><a class="linkedin" href="https://www.linkedin.com/in/srm-ncr-codechef-chapter-/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:linkedin-box-fill"></span>
+              </a></li>
+            <li><a class="instagram" href="https://www.instagram.com/codechef_srmncr/" target="_blank">
+                <span class="iconify-inline" data-icon="ri:instagram-fill"></span>
+              </a></li>
+            <li><a class="youtube" href="https://www.youtube.com/channel/UCiihnYRQAWywnBQANlFrW0A" target="_blank">
+                <span class="iconify-inline" data-icon="ri:youtube-fill"></span>
+              </a></li>
+            <li><a class="github" href="https://github.com/Codechef-SRM-NCR-Chapter" target="_blank">
+                <span class="iconify-inline" data-icon="ri:github-fill"></span>
+              </a></li>
+            <li><a class="gmail" href="mailto:srmcodechefchapter@gmail.com" target="_blank">
+                <span class="iconify-inline" data-icon="mdi:gmail"></span>
+              </a></li>
+        </div>
+      </ul>
+      <a href="#" class="top-btn">
+        <span class="iconify-inline position-absolute bottom-0 end-0 m-3" data-icon="bi:arrow-up-circle-fill"></span>
+      </a>
+    </div>
+
+    <div class="nav-bar d-inline-flex align-items-center flex-row">
       <img class="img-fluid" src="" alt="Logo">
-      <nav id="navbar" class="navbar d-none d-lg-block ">
-        <ul class="list-unstyled align-content-center m-1 text-center flex-lg-row d-none d-lg-inline-flex">
-          <li class="nav-item dropdown">
-            <a class="nav-link2 d-flex align-items-center justify-content-center dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Home
-            </a>
-            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#About">About</a>
-              <a class="dropdown-item" href="#domains">Domains</a>
-              <a class="dropdown-item" href="#lead">Leads</a>
-              <a class="dropdown-item" href="./Youtube">Youtube</a>
-            </div>
-          </li>
-          <li><a class="nav-link" href="Leaderboard">LeaderBoard</a></li>
-          <li><a class="nav-link" href="./contests/CodeVerse">Contests</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
       <div class="toggle-container">
         <input type="checkbox" id="themebtn" name="theme" />
         <label class="theme-switch" for="themebtn">Toggle</label>
       </div>
-      <span class="menu-icon d-block d-lg-none iconify-inline" data-icon="icon-park-outline:hamburger-button"></span>
+      <span class="menu-icon iconify-inline" data-icon="heroicons-solid:menu-alt-1" data-flip="horizontal"></span>
     </div>
   </header>
 
@@ -80,7 +115,7 @@
   </section>
 
   <!-- About me Section -->
-  <section class="about container-lg" id="About">
+  <section class="about container-lg" id="about">
     <div class="title text-center overflow-hidden" data-aos="fade-up" data-aos-duration="1300">
       <h2>About Us</h2>
     </div>
@@ -201,7 +236,7 @@
   </section>
 
   <!-- Leads name -->
-  <section id="lead" class="lead sect-pt4 route">
+  <section id="team" class="lead sect-pt4 route">
     <div class="container">
       <div class="title text-center" data-aos="fade-up" data-aos-duration="1300">
         <h2>Our Leads</h2>
@@ -385,13 +420,13 @@
   <footer class="footer text-center ">
     &copy; Copyrights 2021 by CodeChef SRM NCR Chapter. All Rights Reserved.
     <br> <br>
-    Designed By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a>
+    Made By <a href="https://drish-xd.is-a.dev" target="_blank">Drish</a> & <a href="https://tanish2002.is-a.dev" target="_blank">Tanish</a>
   </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
