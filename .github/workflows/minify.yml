@@ -19,11 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Auto Minify Theme CSS file
+      - name: Auto Minify CSS files
         uses: nizarmah/auto-minify@master
         with:
           directory: 'css'
-      - name: Auto Minify Theme JS file
+      - name: Auto Minify JS file
         uses: nizarmah/auto-minify@master
         with:
           directory: 'js'
