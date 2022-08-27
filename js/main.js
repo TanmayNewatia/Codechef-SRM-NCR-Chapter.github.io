@@ -65,6 +65,10 @@ AOS.init({
   once: false,
 });
 
+//
+$("#logo-img").click(function() {
+  jQuery('html,body').animate({scrollTop:0},'fast');
+})
 // preloader
 
 $(window).on('load', function() { 
