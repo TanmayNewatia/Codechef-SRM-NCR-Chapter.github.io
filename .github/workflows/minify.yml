@@ -1,0 +1,33 @@
+# This is a basic workflow to auto minify js and css
+
+name: Auto Minify CSS/JS file
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the dev branch
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'css/**'
+      - 'js/**'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Auto Minify Theme CSS file
+        uses: nizarmah/auto-minify@master
+        with:
+          directory: 'css'
+      - name: Auto Minify Theme JS file
+        uses: nizarmah/auto-minify@master
+        with:
+          directory: 'js'
+      - name: Auto committing minified files
+        uses: stefanzweifel/git-auto-commit-action@v3.0.0
+        with:
+          commit_message: "Github Action: Auto Minified Theme CSS/JS Files"
+          branch: ${{ github.ref }}
