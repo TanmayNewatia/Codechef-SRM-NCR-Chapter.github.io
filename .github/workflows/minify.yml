@@ -6,12 +6,13 @@ name: Auto Minify CSS/JS file
 # events but only for the dev branch
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
     paths:
       - 'css/**'
       - 'js/**'
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
