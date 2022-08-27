@@ -7,9 +7,6 @@ name: Auto Minify CSS/JS file
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - 'css/**'
-      - 'js/**'
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
