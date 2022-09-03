@@ -1,0 +1,45 @@
+table {
+    width: 70% !important;
+    background-color: var(--about-bg);
+    margin: auto !important;
+    color: var(--text-color) !important;
+    border-bottom: 1px solid var(--bg-color-light) !important;
+    text-transform: lowercase;
+}
+
+table ::first-letter {
+    text-transform: uppercase !important;
+}
+
+table tr th {
+    background-color: var(--about-bg);
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border: 1px solid var(--bg-color-light) !important;
+}
+
+table tr td {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 30px 0 !important;
+    border-left: 1px solid var(--bg-color-light) !important;
+    border-right: 1px solid var(--bg-color-light) !important;
+}
+
+.leaderboard {
+    color: var(--text-color) !important;
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 90% !important;
+    }
+}

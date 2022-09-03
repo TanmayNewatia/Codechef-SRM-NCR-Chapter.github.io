@@ -1,0 +1,60 @@
+h4 {
+    font: 700 1.5rem "Inconsolata";
+    margin: 25px 0 10px 0;
+}
+
+a {
+    color: var(--text-color) !important;
+}
+
+a:hover {
+    color: var(--text-color) !important;
+}
+
+.iconify-inline {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.question {
+    counter-reset: span;
+}
+
+.question .counter::before {
+    counter-increment: span;
+    content: "Q"counter(span) ".";
+}
+
+.nav-item {
+    font-weight: 700 !important;
+    background-color: var(--about-bg);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nav-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.nav-item .active {
+    font-weight: 900 !important;
+    color: #2DBA4E !important;
+    background-color: var(--secondary-color) !important;
+    border-bottom-color: var(--secondary-color) !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.gist * {
+    background: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    font-weight: 800;
+    letter-spacing: 0.5 px;
+}
+
+.gist .gist-file {
+    border-top-left-radius: 0 !important;
+}
+
+.gist .gist-meta a {
+    color: #2DBA4E !important;
+    font-weight: 900 !important;
+}
