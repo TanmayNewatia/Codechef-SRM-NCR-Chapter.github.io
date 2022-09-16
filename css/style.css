@@ -305,6 +305,11 @@ label:active:after {
 }
 
 /* Domain */
+
+.modal-body h3{
+  text-align: center;
+}
+
 .domains {
   position: relative;
   width: 100%;
@@ -438,6 +443,10 @@ label:active:after {
 
 .modal-header {
   border-color: var(--text-color);
+}
+
+.modal-header button{
+  display:none;
 }
 
 .custom-anime {
