@@ -322,6 +322,11 @@ label:active:after {
   align-items: stretch;
 }
 
+.card-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .card {
   background: var(--theme-color);
 }
