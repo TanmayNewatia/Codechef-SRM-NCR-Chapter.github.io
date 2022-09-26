@@ -411,6 +411,7 @@ label:active:after {
   margin-top: 200px;
   z-index: 1000;
   transition: color 0.5s ease-out;
+  text-align: center;
 }
 
 .card3 p {
