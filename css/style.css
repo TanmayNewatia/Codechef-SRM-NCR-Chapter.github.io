@@ -306,7 +306,7 @@ label:active:after {
 
 /* Domain */
 
-.modal-body h3{
+.modal-body h4{
   text-align: center;
 }
 
@@ -449,6 +449,8 @@ label:active:after {
 
 .modal-header {
   border-color: var(--text-color);
+  display: inline-block;
+  text-align: center;
 }
 
 .modal-header button{
