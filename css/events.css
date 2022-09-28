@@ -28,19 +28,18 @@
 body {
 	width: 100%;
 	min-height: 100vh;
-	background-image: url(img/light.png);
+	background-image: url(../img/light.png);
 	color: var(--bg-color);
 }
-.title{
-  display: flex;
-  justify-content: center;
+.title {
+	display: flex;
+	justify-content: center;
 }
-.title h1{
-  text-transform: capitalize;
-  letter-spacing: .5mm;
-  font: 800 4rem Inconsolata;
+.title h1 {
+	text-transform: capitalize;
+	letter-spacing: 0.5mm;
+	font: 800 4rem Inconsolata;
 }
-
 
 .events-container {
 	display: flex;
@@ -107,10 +106,6 @@ body {
 	.event-card p {
 		font-size: 1rem;
 	}
-
-	.upcoming {
-		font-size: 1.2rem;
-	}
 }
 
 @media screen and (max-width: 480px) {
@@ -124,9 +119,5 @@ body {
 
 	.event-card p {
 		font-size: 0.9rem;
-	}
-
-	.upcoming {
-		font-size: 1rem;
 	}
 }
