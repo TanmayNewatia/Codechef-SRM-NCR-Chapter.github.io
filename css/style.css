@@ -115,7 +115,7 @@ body {
 .side {
   position: fixed;
   text-decoration: none !important;
-  right: -600px;
+  right: -1000px;
   bottom: 0;
   width: 350px;
   height: calc(100vh - 80px);
@@ -449,12 +449,13 @@ label:active:after {
 
 .modal-header {
   border-color: var(--text-color);
-  display: inline-block;
+  display: flex;
   text-align: center;
 }
 
-.modal-header button{
-  display:none;
+.modal-title{
+  flex-grow: 1;
+  text-align: center;
 }
 
 .custom-anime {
