@@ -238,15 +238,15 @@ label:active:after {
 }
 
 .homepage h1 {
-	font: 800 80px "Inconsolata";
-	z-index: 2;
-	color: var(--text-color);
+    font: 800 80px "Inconsolata";
+    z-index: 2;
+    color: var(--text-color);
 }
 
 .homepage p {
-	color: var(--text-color);
-	z-index: 2;
-	font: 600 30px "Inconsolata";
+    color: var(--text-color);
+    z-index: 2;
+    font: 600 30px "Inconsolata";
 }
 
 .title {
@@ -449,6 +449,15 @@ label:active:after {
 
 .modal-header {
 	border-color: var(--text-color);
+}
+
+.modal-title {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.modal-body h4 {
+	text-align: center;
 }
 
 .modal-header button {
