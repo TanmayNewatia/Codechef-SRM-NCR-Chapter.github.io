@@ -238,15 +238,15 @@ label:active:after {
 }
 
 .homepage h1 {
-	font: 800 80px "Inconsolata";
-	z-index: 2;
-	color: #444444;
+    font: 800 80px "Inconsolata";
+    z-index: 2;
+    color: var(--text-color);
 }
 
 .homepage p {
-	color: #444444;
-	z-index: 2;
-	font: 600 30px "Inconsolata";
+    color: var(--text-color);
+    z-index: 2;
+    font: 600 30px "Inconsolata";
 }
 
 .title {
@@ -456,8 +456,12 @@ label:active:after {
 	text-align: center;
 }
 
-.modal-body h4{
+.modal-body h4 {
 	text-align: center;
+}
+
+.modal-header button {
+	display: none;
 }
 
 .custom-anime {
